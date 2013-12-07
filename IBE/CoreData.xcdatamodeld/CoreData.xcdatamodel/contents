@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="3400" systemVersion="13A603" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Patient" syncable="YES">
+        <attribute name="dob" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="patientScans" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Scan" syncable="YES"/>
+    </entity>
+    <entity name="Scan" syncable="YES"/>
+    <elements>
+        <element name="Patient" positionX="160" positionY="192" width="128" height="118"/>
+        <element name="Scan" positionX="403" positionY="198" width="128" height="45"/>
+    </elements>
+</model>
